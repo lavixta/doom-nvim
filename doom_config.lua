@@ -20,7 +20,7 @@ local doom = {
 	-- false : Disable format on save
 	-- true  : Enable format on save
 	-- @default = false
-	fmt_on_save = false,
+	fmt_on_save = true,
 
 	-- Disable Vim macros
 	-- false : Enable Vim macros
@@ -70,7 +70,7 @@ local doom = {
 	-- true  : enables scroll off
 	-- @default = true, @default scrolloff_amount = 4,
 	scrolloff = true,
-	scrolloff_amount = 4,
+	scrolloff_amount = 8,
 
 	-- Enable mouse
 	-- false : disables mouse
@@ -244,7 +244,7 @@ local doom = {
 
 	-- Default colorscheme
 	-- @default = doom-one
-	colorscheme = 'doom-one',
+	colorscheme = 'gruvbox-flat',
 
 	-- Background color
 	-- @default = dark
@@ -361,6 +361,14 @@ local nvim = {
 	options = {},
 }
 -- }}}
+-- vim.api.nvim_command('nnoremap <CR> :noh<CR><CR>')
+vim.api.nvim_command('inoremap jk <Esc>')
+vim.api.nvim_command('inoremap <C-j> <Left>')
+vim.api.nvim_command('inoremap <C-l> <Right>')
+-- vim.api.nvim_command('inoremap <C-h> <bs>')
+vim.g.gruvbox_transparent = true
+vim.g.gruvbox_flat_style = "dark"
+vim.g.gruvbox_flat_style = "hard"
 
 return {
 	doom = doom,

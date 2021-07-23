@@ -13,7 +13,7 @@
 
 local doom = {
 	ui = {
-		'dashboard',      -- Start screen
+--		'dashboard',      -- Start screen
 		-- 'doom-themes', -- Additional doom emacs' colorschemes
 		'statusline',     -- Statusline
 		'tabline',        -- Tabline, shows your buffers list at top
@@ -47,14 +47,14 @@ local doom = {
 		-- at the end, e.g. 'rust +lsp'. This will install the rust TreeSitter
 		-- parser and rust-analyzer
 		--
-		-- 'html',        -- HTML support
-		-- 'css',         -- CSS support
-		-- 'javascript',  -- JavaScript support
-		-- 'typescript',  -- TypeScript support
+		'html +lsp',        -- HTML support
+		'css +lsp',         -- CSS support
+		'javascript +lsp',  -- JavaScript support
+		'typescript +lsp',  -- TypeScript support
 		-- 'bash',        -- The terminal gods language
-		-- 'python +lsp', -- Python support + lsp
+		'python +lsp', -- Python support + lsp
 		-- 'ruby',        -- Look ma, I love the gems!
-		'lua',            -- Support for our gods language
+		'lua +lsp',            -- Support for our gods language
 		-- 'elixir',      -- Build scalable and maintainable software
 		-- 'haskell',     -- Because Functional programming is fun, isn't it?
 
@@ -63,14 +63,14 @@ local doom = {
 		-- 'cpp',         -- C++ support
 		-- 'java',        -- Java support
 
-		-- 'config',      -- Configuration files (JSON, YAML, TOML)
+		'config +lsp',      -- Configuration files (JSON, YAML, TOML)
 		-- 'dockerfile',  -- Do you like containers, right?
 	},
 	utilities = {
 		-- 'suda',            -- Write and read files without sudo permissions
-		-- 'lazygit',         -- LazyGit integration for Neovim, requires LazyGit
+		'lazygit',         -- LazyGit integration for Neovim, requires LazyGit
 		-- 'neogit',          -- Magit for Neovim
-		-- 'colorizer',       -- Fastets colorizer for Neovim
+		'colorizer',       -- Fastets colorizer for Neovim
 		'range-highlight',    -- hightlights ranges you have entered in commandline
 	},
 }
