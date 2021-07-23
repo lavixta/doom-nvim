@@ -23,7 +23,7 @@ M.load_default_options = function()
 	-- Global options
 	vim.opt.hidden = true
 	vim.opt.updatetime = 200
-	vim.opt.timeoutlen = 500
+	vim.opt.timeoutlen = 100
 	vim.opt.completeopt = {
 		'menu',
 		'menuone',

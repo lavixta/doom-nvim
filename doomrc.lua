@@ -28,7 +28,7 @@ local doom = {
 	},
 	editor = {
 		'auto-session',    -- A small automated session manager for Neovim
-		-- 'terminal',     -- Terminal for Neovim (NOTE: needed for runner and compiler)
+		'terminal',     -- Terminal for Neovim (NOTE: needed for runner and compiler)
 		'explorer',        -- Tree explorer
 		'symbols',         -- LSP symbols and tags
 		-- 'minimap',      -- Code minimap, requires github.com/wfxr/code-minimap
@@ -63,7 +63,7 @@ local doom = {
 		-- 'cpp',         -- C++ support
 		-- 'java',        -- Java support
 
-		'config +lsp',      -- Configuration files (JSON, YAML, TOML)
+		'config',      -- Configuration files (JSON, YAML, TOML)
 		-- 'dockerfile',  -- Do you like containers, right?
 	},
 	utilities = {

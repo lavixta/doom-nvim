@@ -15,7 +15,6 @@ local doom = {
 	-- true  : Enable autosave
 	-- @default = false
 	autosave = false,
-
 	-- Format on save
 	-- false : Disable format on save
 	-- true  : Enable format on save
@@ -199,7 +198,7 @@ local doom = {
 	-- Set the Terminal width
 	-- Applies only to float direction
 	-- @default = 70
-	terminal_width = 70,
+	terminal_width = 100,
 
 	-- Set the Terminal height
 	-- Applies to all directions except window
@@ -234,7 +233,7 @@ local doom = {
 	--   - window
 	--   - float
 	-- @default = 'horizontal'
-	terminal_direction = 'horizontal',
+	terminal_direction = 'float',
 
 	-- NOTE: This will only be activated if 'backup' is true.
 	-- We don'recommend you put this outside of neovim so we've restricted to the path: ~/.config/nvim
@@ -320,7 +319,8 @@ local nvim = {
 	--   augroup_name = {
 	--      { 'BufNewFile,BufRead', 'doomrc', 'set ft=lua'}
 	--   }
-	autocmds = {},
+	autocmds = {
+	},
 
 	-- Set custom key bindings
 	-- @default = {}
@@ -369,7 +369,6 @@ vim.api.nvim_command('inoremap <C-l> <Right>')
 vim.g.gruvbox_transparent = true
 vim.g.gruvbox_flat_style = "dark"
 vim.g.gruvbox_flat_style = "hard"
-
 return {
 	doom = doom,
 	nvim = nvim,
