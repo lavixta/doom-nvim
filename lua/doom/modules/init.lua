@@ -47,7 +47,7 @@ packer.startup(function(use)
 	-- Tree-Sitter
 	use({
 		'nvim-treesitter/nvim-treesitter',
-		opt = true,
+		start = true,
 		run = ':TSUpdate',
 		config = require('doom.modules.config.doom-treesitter'),
 	})

@@ -41,10 +41,10 @@ return {
     end,
     requires = "nvim-lua/plenary.nvim",
   },
-  --[[ {
+  {
     "nvim-treesitter/playground",
-    event = "BufRead",
-  }, ]]
+    event = 'BufRead'
+  },
   {
     "sindrets/diffview.nvim",
     event = "BufRead",
