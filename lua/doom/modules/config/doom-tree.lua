@@ -44,6 +44,7 @@ return function()
 	vim.g.nvim_tree_bindings = {
 		-- default mappings
 		{ key = 'l', cb = tree_cb('edit') },
+		{ key = "h",cb = tree_cb("parent_node") },
 		{ key = '<2-LeftMouse>', cb = tree_cb('edit') },
 		{ key = '<CR>', cb = tree_cb('cd') },
 		{ key = '<2-RightMouse>', cb = tree_cb('cd') },
