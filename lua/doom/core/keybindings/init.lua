@@ -127,7 +127,7 @@ if not functions.is_plugin_disabled('symbols') then
 	utils.map('n', '<F2>', ':SymbolsOutline<CR>', opts)
 end
 if not functions.is_plugin_disabled('explorer') then
-	utils.map('n', '<F3>', ':NvimTreeToggle<CR>', opts)
+	utils.map('n', '<Leader>e', ':NvimTreeToggle<CR>', opts)
 end
 if not functions.is_plugin_disabled('minimap') then
 	utils.map('n', '<F5>', ':MinimapToggle<CR>', opts)

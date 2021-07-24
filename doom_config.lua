@@ -373,5 +373,4 @@ return {
 	doom = doom,
 	nvim = nvim,
 }
-
 -- vim: fdm=marker
