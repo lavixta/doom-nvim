@@ -43,7 +43,7 @@ return function()
 	-- NOTE: the 'edit' key will wrap/unwrap a folder and open a file
 	vim.g.nvim_tree_bindings = {
 		-- default mappings
-		{ key = 'o', cb = tree_cb('edit') },
+		{ key = 'l', cb = tree_cb('edit') },
 		{ key = '<2-LeftMouse>', cb = tree_cb('edit') },
 		{ key = '<CR>', cb = tree_cb('cd') },
 		{ key = '<2-RightMouse>', cb = tree_cb('cd') },

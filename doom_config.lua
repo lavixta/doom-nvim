@@ -178,7 +178,7 @@ local doom = {
 	-- Set max cols
 	-- Defines the column to show a vertical marker
 	-- @default = 80
-	max_columns = 80,
+	max_columns = 200,
 
 	-- Completion box height
 	-- @default = 10
@@ -369,6 +369,10 @@ vim.api.nvim_command('inoremap <C-l> <Right>')
 vim.g.gruvbox_transparent = true
 vim.g.gruvbox_flat_style = "dark"
 vim.g.gruvbox_flat_style = "hard"
+vim.opt.ignorecase =true
+vim.opt.scrolloff = 8 -- is one of my fav
+vim.opt.sidescrolloff = 8
+vim.opt.wrap = true
 return {
 	doom = doom,
 	nvim = nvim,

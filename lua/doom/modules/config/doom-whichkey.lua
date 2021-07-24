@@ -75,14 +75,9 @@ return function()
 		[':'] = { 'Command history' },
 		['b'] = {
 			name = '+buffers',
-			['c'] = { 'Close current buffer' },
 			['f'] = { 'Format buffer' },
 			['b'] = { 'Switch to other buffer' },
-			[']'] = { 'Next buffer' },
-			['n'] = { 'Next buffer' },
 			['g'] = { 'Goto buffer' },
-			['['] = { 'Previous buffer' },
-			['p'] = { 'Previous buffer' },
 		},
 		['c'] = {
 			name = '+code',
@@ -183,10 +178,8 @@ return function()
 		['o'] = {
 			name = '+open',
 			['d'] = { 'Start screen' },
-			['e'] = { 'Tree Explorer' },
 			['m'] = { 'Minimap' },
 			['s'] = { 'Symbols' },
-			['t'] = { 'Terminal' },
 		},
 	}
 

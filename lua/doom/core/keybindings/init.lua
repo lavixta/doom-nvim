@@ -116,8 +116,8 @@ else
 end
 
 -- TAB to cycle buffers too, why not?
-utils.map('n', '<Tab>', ':bnext<CR>', opts)
-utils.map('n', '<S-Tab>', ':bprevious<CR>', opts)
+utils.map('n', '<S-h>', ':bnext<CR>', opts)
+utils.map('n', '<S-l>', ':bprevious<CR>', opts)
 
 -- ESC to turn off search highlighting
 utils.map('n', '<esc>', ':noh<CR>', opts)
@@ -213,7 +213,7 @@ utils.map('n', '<leader>:', '<cmd>Telescope command_history<CR>', opts)
 -- Buffers
 utils.map(
 	'n',
-	'<leader>bc',
+	'<S-x>',
 	'<cmd>lua require("bufferline").handle_close_buffer(vim.fn.bufnr("%"))<CR>',
 	opts
 )
