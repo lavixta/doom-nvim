@@ -41,12 +41,12 @@ async = vim.loop.new_async(vim.schedule_wrap(function()
 		local compiled_plugins_path = vim.fn.expand(
 			'$HOME/.config/doom-nvim/plugin/packer_compiled.lua'
 		)
-		if vim.fn.filereadable(compiled_plugins_path) > 0 then
+		--[[ if vim.fn.filereadable(compiled_plugins_path) > 0 then
 			-- If the current buffer name is empty then trigger Dashboard
 			if vim.api.nvim_buf_get_name(0):len() == 0 then
 				vim.cmd('Dashboard')
 			end
-		end
+		end ]]
 
 		vim.opt.shadafile = ''
 		vim.defer_fn(function()
