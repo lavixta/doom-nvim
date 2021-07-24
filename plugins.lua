@@ -43,6 +43,7 @@ return {
   },
   {
     "nvim-treesitter/playground",
+    opt = true,
     event = 'BufRead'
   },
   {
