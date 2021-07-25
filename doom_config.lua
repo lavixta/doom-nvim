@@ -364,7 +364,7 @@ local nvim = {
 -- vim.api.nvim_command('nnoremap <CR> :noh<CR><CR>')
 vim.api.nvim_command('inoremap jk <Esc>')
 vim.api.nvim_command('inoremap <C-j> <Left>')
-vim.api.nvim_command('inoremap <C-l> <Right>')
+vim.api.nvim_command('inoremap <C-k> <Right>')
 -- vim.api.nvim_command('inoremap <C-h> <bs>')
 vim.g.gruvbox_transparent = true
 vim.g.gruvbox_flat_style = "dark"
