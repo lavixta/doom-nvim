@@ -325,7 +325,7 @@ packer.startup(function(use)
 	-- can be disabled to use your own file formatter
 	local disabled_formatter = functions.is_plugin_disabled('formatter')
 	use({
-		'lukas-reineke/format.nvim',
+		'mhartington/formatter.nvim',
 		config = require('doom.modules.config.doom-format'),
 		disable = disabled_formatter,
 		event = 'BufWinEnter',
