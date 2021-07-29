@@ -63,5 +63,10 @@ async = vim.loop.new_async(vim.schedule_wrap(function()
 
   async:close()
 end))
-
 async:send()
+local null_status_ok, null_ls = pcall(require, "null-ls")
+print(null_status_ok)
+if null_status_ok then
+  null_ls.config {}
+  require("lspconfig")["null-ls"].setup {}
+end
